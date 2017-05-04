@@ -2,60 +2,13 @@ package com.coon.test;
 
 import com.coon.CharClassifier.CharClassifier;
 import com.coon.CharClassifier.CharType;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions.*;
 
-
-/*
-
-    describe("CharClassifier");
-
-    it("should classify X char");
-    assert(CharClassifier::classify('X') == X_SYM);
-    assert(CharClassifier::classify('x') == X_SYM);
-
-    it("should classify ZERO char");
-    assert(CharClassifier::classify('0') == ZERO_SYM);
-
-    it("should classify SIGN char");
-    assert(CharClassifier::classify('+') == SIGN_SYM);
-    assert(CharClassifier::classify('-') == SIGN_SYM);
-
-    it("should classify DECIMAL char");
-    for (char i = 1; i < 10;
-         assert(CharClassifier::classify(i + '0') == DECIMAL_SYM), i++);
-
-    it("should classify CHAR char");
-    assert(CharClassifier::classify('_') == CHAR_SYM);
-    assert(CharClassifier::classify('Y') == CHAR_SYM);
-    assert(CharClassifier::classify('Z') == CHAR_SYM);
-    assert(CharClassifier::classify('y') == CHAR_SYM);
-    assert(CharClassifier::classify('z') == CHAR_SYM);
-    for (char i = 'J'; i < 'X';
-         assert(CharClassifier::classify(i) == CHAR_SYM), i++);
-    for (char i = 'j'; i < 'x';
-         assert(CharClassifier::classify(i) == CHAR_SYM), i++);
-
-    it("should classify HEXCHAR char");
-    for (char i = 'A'; i <= 'H';
-         assert(CharClassifier::classify(i) == HEXCHAR_SYM), i++);
-    for (char i = 'h'; i <= 'h';
-         assert(CharClassifier::classify(i) == HEXCHAR_SYM), i++);
-
-    it("should classify SPACE char");
-    assert(CharClassifier::classify(' ') == SPACE_SYM);
-    assert(CharClassifier::classify('\n') == SPACE_SYM);
-    assert(CharClassifier::classify('\t') == SPACE_SYM);
-
-    it("should classify END char");
-    assert(CharClassifier::classify(';') == END_SYM);
-
- */
 
 
 class CharClassifierTest{
-
 
     @Test
     void classify() {
