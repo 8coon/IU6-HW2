@@ -73,7 +73,9 @@ public class Tokenizer {
 
 
     private void log(String str) {
-        System.out.println(str);
+        if (this.logging) {
+            System.out.println(str);
+        }
     }
 
 

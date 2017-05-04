@@ -19,15 +19,15 @@ public class Operand extends ASTItem {
 
         switch (this.token.getType()) {
             case IDENTIFIER: {
-                sb.append("(identifier) ");
+                sb.append("(идентификатор) ");
             } break;
 
             case CONST: {
-                sb.append("(constant) ");
+                sb.append("(константа) ");
             } break;
 
             case HEX: {
-                sb.append("(hexadecimal constant) ");
+                sb.append("(шестнадцатеричная константа) ");
             } break;
         }
 

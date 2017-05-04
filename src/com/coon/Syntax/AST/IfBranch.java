@@ -14,10 +14,10 @@ public class IfBranch extends ASTItem {
     @Override
     public String toStringInfo() {
         if (this.truthy) {
-            return "Yes";
+            return "Да";
         }
 
-        return "No";
+        return "Нет";
     }
 
 

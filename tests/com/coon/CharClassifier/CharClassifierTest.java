@@ -1,7 +1,4 @@
-package com.coon.test;
-
-import com.coon.CharClassifier.CharClassifier;
-import com.coon.CharClassifier.CharType;
+package com.coon.CharClassifier;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
