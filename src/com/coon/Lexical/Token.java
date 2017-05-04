@@ -5,9 +5,10 @@ public class Token {
 
     private String read;
     private LexicalState type;
+    private int position;
 
 
-    public Token(LexicalState type, String read) {
+    public Token(LexicalState type, String read, int position) {
         switch (type) {
             case HEX_OR_CONST: {
                 type = LexicalState.CONST;
@@ -24,6 +25,7 @@ public class Token {
 
         this.type = type;
         this.read = read;
+        this.position = position;
     }
 
 
@@ -34,6 +36,11 @@ public class Token {
 
     public LexicalState getType() {
         return this.type;
+    }
+
+
+    public int getPosition() {
+        return this.position;
     }
 
 }

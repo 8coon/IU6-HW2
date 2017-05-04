@@ -110,14 +110,14 @@ public class Tokenizer {
 
                 case END: {
                     if (state != LexicalState.NONE) {
-                        out.add(new Token(state, read.toString()));
+                        out.add(new Token(state, read.toString(), i));
 
                         read = new StringBuilder();
                         state = LexicalState.NONE;
                     }
 
                     if (appendChar != null) {
-                        out.add(new Token(LexicalState.SYMBOL, String.valueOf(appendChar)));
+                        out.add(new Token(LexicalState.SYMBOL, String.valueOf(appendChar), i));
                     }
                 } break;
 
