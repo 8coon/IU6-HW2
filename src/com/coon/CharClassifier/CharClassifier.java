@@ -29,7 +29,7 @@ public class CharClassifier {
 
 
     private static boolean isHexChar(char ch) {
-        return (ch >= 'A' && ch <= 'H') || (ch >= 'a' && ch <= 'h');
+        return (ch >= 'A' && ch <= 'F') || (ch >= 'a' && ch <= 'f');
     }
 
 

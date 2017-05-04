@@ -27,19 +27,19 @@ class CharClassifierTest{
         Assertions.assertEquals(CharType.CHAR, CharClassifier.classify('Z'));
         Assertions.assertEquals(CharType.CHAR, CharClassifier.classify('z'));
 
-        for (char i = 'J'; i < 'X'; i++) {
+        for (char i = 'G'; i < 'X'; i++) {
             Assertions.assertEquals(CharType.CHAR, CharClassifier.classify(i));
         }
 
-        for (char i = 'j'; i < 'x'; i++) {
+        for (char i = 'g'; i < 'x'; i++) {
             Assertions.assertEquals(CharType.CHAR, CharClassifier.classify(i));
         }
 
-        for (char i = 'A'; i <= 'H'; i++) {
+        for (char i = 'A'; i <= 'F'; i++) {
             Assertions.assertEquals(CharType.HEX_CHAR, CharClassifier.classify(i));
         }
 
-        for (char i = 'a'; i <= 'h'; i++) {
+        for (char i = 'a'; i <= 'f'; i++) {
             Assertions.assertEquals(CharType.HEX_CHAR, CharClassifier.classify(i));
         }
 
