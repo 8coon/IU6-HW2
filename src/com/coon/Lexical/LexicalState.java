@@ -10,4 +10,7 @@ public enum LexicalState {
     HEX,
     ERROR,
     END,
+
+    IF,
+    ELSE,
 }

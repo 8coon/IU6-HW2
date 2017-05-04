@@ -8,6 +8,20 @@ public class Token {
 
 
     public Token(LexicalState type, String read) {
+        switch (type) {
+            case HEX_OR_CONST: {
+                type = LexicalState.CONST;
+            } break;
+
+            case IDENTIFIER: {
+                if (read.equals("if")) {
+                    type = LexicalState.IF;
+                } else if (read.equals("else")) {
+                    type = LexicalState.ELSE;
+                }
+            } break;
+        }
+
         this.type = type;
         this.read = read;
     }
