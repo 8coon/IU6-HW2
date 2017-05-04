@@ -43,15 +43,9 @@ public class CharClassifier {
     }
 
 
-    private static boolean isEquation(char ch) {
-        return ch == '=';
-    }
-
-
     public static CharType classify(char ch) {
         if (CharClassifier.isEnd(ch)) return CharType.END;
         if (CharClassifier.isSign(ch)) return CharType.SIGN;
-        if (CharClassifier.isEquation(ch)) return CharType.EQUATION;
         if (CharClassifier.isZero(ch)) return CharType.ZERO;
         if (CharClassifier.isX(ch)) return CharType.X;
         if (CharClassifier.isSpace(ch)) return CharType.SPACE;
